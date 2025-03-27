@@ -65,18 +65,32 @@
         .whale-container {
             position: fixed;
             bottom: 20px;
-            cursor: pointer;
-        }
-        .whale-left {
-            left: 20px;
-        }
-        .whale-right {
             right: 20px;
+            cursor: pointer;
         }
         .whale-message {
             display: none;
             position: fixed;
             bottom: 70px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            max-width: 250px;
+        }
+        .whale-left {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+        .whale-message-left {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border-radius: 10px;
@@ -100,15 +114,6 @@
         <img src="foto1.JPG" alt="Foto juntos 1">
         <img src="foto2.JPG" alt="Foto juntos 2">
         <img src="foto3.JPG" alt="Foto juntos 3">
-        <img src="foto4.JPG" alt="Foto juntos 4">
-        <img src="foto5.JPG" alt="Foto juntos 5">
-        <img src="foto6.JPG" alt="Foto juntos 6">
-        <img src="foto7.JPG" alt="Foto juntos 7">
-        <img src="foto8.JPG" alt="Foto juntos 8">
-        <img src="foto9.JPG" alt="Foto juntos 9">
-        <img src="foto10.JPG" alt="Foto juntos 10">
-        <img src="foto11.JPG" alt="Foto juntos 11">
-        <img src="foto12.JPG" alt="Foto juntos 12">
     </div>
     
     <div class="playlist">
@@ -116,25 +121,28 @@
         <a href="https://open.spotify.com/playlist/3ae9IDvqJTeyUshnqDERj0?si=RKMW3Ct0QeCmx_vDhBL4ag&pt=5bdf7c82ff9dc9aef1ff48345dce2aaf" target="_blank">Escúchala aquí</a>
     </div>
     
-    <div class="whale-container whale-left" onclick="mostrarMensaje('mensaje-helado')">
+    <div class="whale-container" onclick="mostrarMensaje()">
         <img src="whale.jpg" alt="Tiburón ballena" width="80">
     </div>
-    <div id="mensaje-helado" class="whale-message" style="left: 20px;">Cada que leas esto te debo un helado.</div>
+    <div id="mensaje" class="whale-message">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
     
-    <div class="whale-container whale-right" onclick="mostrarMensaje('mensaje-amor')">
+    <div class="whale-left" onclick="mostrarMensajeLeft()">
         <img src="whale.jpg" alt="Tiburón ballena" width="80">
     </div>
-    <div id="mensaje-amor" class="whale-message" style="right: 20px;">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
+    <div id="mensaje-left" class="whale-message-left">Cada que leas esto te debo un helado.</div>
     
     <script>
         function mostrarCarta() {
             document.getElementById("carta").style.display = "block";
         }
-        function mostrarMensaje(id) {
-            var mensaje = document.getElementById(id);
+        function mostrarMensaje() {
+            var mensaje = document.getElementById("mensaje");
             mensaje.style.display = mensaje.style.display === "block" ? "none" : "block";
+        }
+        function mostrarMensajeLeft() {
+            var mensajeLeft = document.getElementById("mensaje-left");
+            mensajeLeft.style.display = mensajeLeft.style.display === "block" ? "none" : "block";
         }
     </script>
 </body>
 </html>
-
