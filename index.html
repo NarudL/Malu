@@ -78,19 +78,6 @@
             display: none;
             position: fixed;
             bottom: 70px;
-            right: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            font-size: 16px;
-            max-width: 250px;
-        }
-        .whale-message-left {
-            display: none;
-            position: fixed;
-            bottom: 70px;
-            left: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border-radius: 10px;
@@ -104,10 +91,19 @@
     <h1>Malu</h1>
     <h2>(mis 365 días a tu lado)</h2>
     <button class="button" onclick="mostrarCarta('carta1')">Leer carta</button>
-    <p id="carta1" class="hidden">Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.</p>
+    <p id="carta1" class="hidden">
+        Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>
+        Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>
+        Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.
+    </p>
     
     <button class="button" onclick="mostrarCarta('carta2')">Carta de amor</button>
-    <p id="carta2" class="hidden">Mi amor,<br><br>No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido.<br><br>Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro...[Texto completo]</p>
+    <p id="carta2" class="hidden">
+        Mi amor, No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido. <br><br>
+        Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro. Contigo aprendí que el amor no es solo sentir, sino también construir, cuidar y elegirnos, una y otra vez.<br><br>
+        Gracias por cada risa, cada palabra de aliento, cada gesto de amor. Gracias por ser la persona con la que quiero compartir mi presente y mi futuro. No sé qué nos depara la vida, pero de algo estoy seguro: no hay nadie más con quien quisiera descubrirlo. <br><br>
+        Te amo con todo mi corazón, de una manera que no puedo medir ni explicar, solo sentir. Eres y siempre serás mi más bonita coincidencia. ❤️
+    </p>
     
     <div class="playlist">
         <p>Nuestra playlist conjunta en Spotify:</p>
@@ -117,17 +113,16 @@
     <div class="whale-container" onclick="mostrarMensaje('mensaje1')">
         <img src="whale.jpg" alt="Tiburón ballena" width="80">
     </div>
-    <div id="mensaje1" class="whale-message">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
+    <div id="mensaje1" class="whale-message" style="right: 20px;">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
     
     <div class="whale-left" onclick="mostrarMensaje('mensaje2')">
         <img src="whale.jpg" alt="Tiburón ballena" width="80">
     </div>
-    <div id="mensaje2" class="whale-message-left">Cada que leas esto te debo un helado.</div>
+    <div id="mensaje2" class="whale-message" style="left: 20px;">Cada que leas esto te debo un helado.</div>
     
     <script>
         function mostrarCarta(id) {
-            var carta = document.getElementById(id);
-            carta.style.display = "block";
+            document.getElementById(id).style.display = "block";
         }
         function mostrarMensaje(id) {
             var mensaje = document.getElementById(id);
