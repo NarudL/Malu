@@ -6,18 +6,18 @@
     <title>Malu</title>
     <style>
         body {
-            background-color: #d3d3d3; /* Gris neutro */
+            background-color: #d3d3d3;
             color: #333;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
         }
         h1 {
-            color: #1e90ff; /* Azul minimalista */
+            color: #1e90ff;
             font-size: 60px;
             font-weight: bold;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            font-family: 'Comic Sans MS', cursive, sans-serif; /* Estilo de globo inflable */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
         h2 {
             font-size: 24px;
@@ -65,18 +65,32 @@
         .whale-container {
             position: fixed;
             bottom: 20px;
+            right: 20px;
             cursor: pointer;
         }
         .whale-left {
+            position: fixed;
+            bottom: 20px;
             left: 20px;
-        }
-        .whale-right {
-            right: 20px;
+            cursor: pointer;
         }
         .whale-message {
             display: none;
             position: fixed;
             bottom: 70px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            max-width: 250px;
+        }
+        .whale-message-left {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border-radius: 10px;
@@ -90,35 +104,34 @@
     <h1>Malu</h1>
     <h2>(mis 365 días a tu lado)</h2>
     <button class="button" onclick="mostrarCarta('carta1')">Leer carta</button>
-    <p id="carta1" class="hidden">
-        Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>
-        Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>
-        Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.
-    </p>
+    <p id="carta1" class="hidden">Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.</p>
+    
     <button class="button" onclick="mostrarCarta('carta2')">Carta de amor</button>
-    <p id="carta2" class="hidden">
-        Mi amor,<br><br>
-        No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido.<br><br>
-        Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro. Contigo aprendí que el amor no es solo sentir, sino también construir, cuidar y elegirnos, una y otra vez.<br><br>
-        Amo la forma en que me miras, como si en tus ojos no existiera nada más que este amor que compartimos. Amo cómo nuestras conversaciones nunca tienen un final real, cómo siempre encontramos algo nuevo de qué hablar, reír o soñar. Amo que en cada abrazo tuyo siento que todo está bien, que el tiempo se detiene y que no hay mejor lugar en el mundo que entre tus brazos.<br><br>
-        Te amo con todo mi corazón. ❤️
-    </p>
-    <div class="images">
-        <img src="foto1.JPG" alt="Foto juntos 1">
-        <img src="foto2.JPG" alt="Foto juntos 2">
-        <img src="foto3.JPG" alt="Foto juntos 3">
-        <img src="foto4.JPG" alt="Foto juntos 4">
-        <img src="foto5.JPG" alt="Foto juntos 5">
-        <img src="foto6.JPG" alt="Foto juntos 6">
-    </div>
+    <p id="carta2" class="hidden">Mi amor,<br><br>No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido.<br><br>Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro...[Texto completo]</p>
+    
     <div class="playlist">
         <p>Nuestra playlist conjunta en Spotify:</p>
         <a href="https://open.spotify.com/playlist/3ae9IDvqJTeyUshnqDERj0?si=RKMW3Ct0QeCmx_vDhBL4ag&pt=5bdf7c82ff9dc9aef1ff48345dce2aaf" target="_blank">Escúchala aquí</a>
     </div>
+    
+    <div class="whale-container" onclick="mostrarMensaje('mensaje1')">
+        <img src="whale.jpg" alt="Tiburón ballena" width="80">
+    </div>
+    <div id="mensaje1" class="whale-message">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
+    
+    <div class="whale-left" onclick="mostrarMensaje('mensaje2')">
+        <img src="whale.jpg" alt="Tiburón ballena" width="80">
+    </div>
+    <div id="mensaje2" class="whale-message-left">Cada que leas esto te debo un helado.</div>
+    
     <script>
         function mostrarCarta(id) {
             var carta = document.getElementById(id);
-            carta.style.display = carta.style.display === "block" ? "none" : "block";
+            carta.style.display = "block";
+        }
+        function mostrarMensaje(id) {
+            var mensaje = document.getElementById(id);
+            mensaje.style.display = mensaje.style.display === "block" ? "none" : "block";
         }
     </script>
 </body>
