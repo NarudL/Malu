@@ -87,28 +87,54 @@
     <h2>(mis 365 días a tu lado)</h2>
     <button class="button" onclick="mostrarCarta()">Leer carta</button>
     <p id="carta" class="hidden">
-        Mi amor,
-        <br><br>
-        No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido.
-        <br><br>
-        Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro. Contigo aprendí que el amor no es solo sentir, sino también construir, cuidar y elegirnos, una y otra vez.
-        <br><br>
-        Amo la forma en que me miras, como si en tus ojos no existiera nada más que este amor que compartimos. Amo cómo nuestras conversaciones nunca tienen un final real, cómo siempre encontramos algo nuevo de qué hablar, reír o soñar. Amo que en cada abrazo tuyo siento que todo está bien, que el tiempo se detiene y que no hay mejor lugar en el mundo que entre tus brazos.
-        <br><br>
-        Recuerdo tantos momentos que hemos vivido juntos, desde las pequeñas cosas del día a día hasta esas aventuras que han quedado marcadas en mi corazón. Recuerdo nuestras risas cómplices, las miradas que lo dicen todo, las noches en las que el mundo desaparece y solo quedamos nosotros dos. Recuerdo la manera en que sostienes mi mano, como si fuera lo más natural del mundo, y cómo tu presencia se ha vuelto mi hogar, ese lugar seguro al que siempre quiero volver.
-        <br><br>
-        Me haces sentir completo, amado y comprendido, y eso es algo que valoro más de lo que puedo expresar. No hay distancia, obstáculo o circunstancia que pueda cambiar lo que siento por ti, porque mi amor por ti no depende de lo externo, sino de lo profundo y real que es.
-        <br><br>
-        Eres mi mayor regalo, mi mejor historia, mi persona favorita. No hay día en el que no agradezca por cruzarme contigo, por cada instante que hemos compartido, por cada detalle que hace que te ame un poco más. Porque contigo todo es más bonito, más intenso, más especial.
-        <br><br>
-        Gracias por cada risa, cada palabra de aliento, cada gesto de amor. Gracias por ser la persona con la que quiero compartir mi presente y mi futuro. No sé qué nos depara la vida, pero de algo estoy seguro: no hay nadie más con quien quisiera descubrirlo.
-        <br><br>
+        Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>
+        Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>
+        Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.
+    </p>
+    
+    <div class="images">
+        <img src="foto1.JPG" alt="Foto juntos 1">
+        <img src="foto2.JPG" alt="Foto juntos 2">
+        <img src="foto3.JPG" alt="Foto juntos 3">
+        <img src="foto4.JPG" alt="Foto juntos 4">
+        <img src="foto5.JPG" alt="Foto juntos 5">
+        <img src="foto6.JPG" alt="Foto juntos 6">
+        <img src="foto7.JPG" alt="Foto juntos 7">
+        <img src="foto8.JPG" alt="Foto juntos 8">
+        <img src="foto9.JPG" alt="Foto juntos 9">
+        <img src="foto10.JPG" alt="Foto juntos 10">
+        <img src="foto11.JPG" alt="Foto juntos 11">
+        <img src="foto12.JPG" alt="Foto juntos 12">
+    </div>
+    
+    <div class="playlist">
+        <p>Nuestra playlist conjunta en Spotify:</p>
+        <a href="https://open.spotify.com/playlist/3ae9IDvqJTeyUshnqDERj0?si=RKMW3Ct0QeCmx_vDhBL4ag&pt=5bdf7c82ff9dc9aef1ff48345dce2aaf" target="_blank">Escúchala aquí</a>
+    </div>
+    
+    <button class="button" onclick="mostrarCartaLarga()">Carta de amor</button>
+    <p id="cartaLarga" class="hidden">
+        Mi amor,<br><br>
+        No hay un solo día en el que no me sienta agradecido por tenerte en mi vida. Eres mi paz en los momentos difíciles, mi risa en los días grises y mi certeza en medio de cualquier duda. A tu lado he encontrado un amor que no se desgasta, que crece y se fortalece con cada instante compartido.<br><br>
+        Me enamoro de ti todos los días: de la dulzura en tu voz, de la manera en que iluminas cada lugar con tu presencia, de la forma en que haces que el mundo parezca un poquito más cálido y seguro...<br><br>
         Te amo con todo mi corazón, de una manera que no puedo medir ni explicar, solo sentir. Eres y siempre serás mi más bonita coincidencia. ❤️
     </p>
-    <button class="button" onclick="mostrarCarta()">Carta de amor</button>
+    
+    <div class="whale-container" onclick="mostrarMensaje()">
+        <img src="whale.jpg" alt="Tiburón ballena" width="80">
+    </div>
+    <div id="mensaje" class="whale-message">Te reafirmo que eres el amor de mi vida, gracias por ser parte de esto que estamos construyendo juntos.</div>
+    
     <script>
         function mostrarCarta() {
             document.getElementById("carta").style.display = "block";
+        }
+        function mostrarCartaLarga() {
+            document.getElementById("cartaLarga").style.display = "block";
+        }
+        function mostrarMensaje() {
+            var mensaje = document.getElementById("mensaje");
+            mensaje.style.display = mensaje.style.display === "block" ? "none" : "block";
         }
     </script>
 </body>
