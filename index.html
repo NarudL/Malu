@@ -6,7 +6,7 @@
     <title>Malu</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Gris neutro */
+            background-color: #d3d3d3; /* Gris neutro */
             color: #333;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -14,7 +14,10 @@
         }
         h1 {
             color: #1e90ff; /* Azul minimalista */
-            font-size: 48px;
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Estilo de globo inflable */
         }
         h2 {
             font-size: 24px;
@@ -40,6 +43,25 @@
             margin-right: auto;
             line-height: 1.5;
         }
+        .images {
+            margin-top: 20px;
+        }
+        .images img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .playlist {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .playlist a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -51,6 +73,16 @@
         Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>
         Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.
     </p>
+    
+    <div class="images">
+        <img src="foto1.jpg" alt="Foto juntos 1">
+        <img src="foto2.jpg" alt="Foto juntos 2">
+    </div>
+    
+    <div class="playlist">
+        <p>Nuestra playlist conjunta en Spotify:</p>
+        <a href="https://open.spotify.com/playlist/tu_playlist_id" target="_blank">Escúchala aquí</a>
+    </div>
     
     <script>
         function mostrarCarta() {
