@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malu</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Gris neutro */
+            color: #333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #1e90ff; /* Azul minimalista */
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #1e90ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+            margin-top: 30px;
+            font-size: 18px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Malu</h1>
+    <h2>(mis 365 días a tu lado)</h2>
+    <button class="button" onclick="mostrarCarta()">Leer carta</button>
+    <p id="carta" class="hidden">
+        Primero que todo gracias por siempre estar ahí, ser mi compañía, mi apoyo, mi amiga y sobre todo mi novia. Eres una persona irremplazable tanto para mí como para mi familia, que por cierto hace rato todos te toman como parte de ella.<br><br>
+        Eres alguien tan especial que literalmente es imposible describirte, solo eres tú y eso es lo que te hace única. Cada parte irradia felicidad a todos, tus palabras dan calma, tus ojos confianza, tu voz ternura y tu personalidad carisma.<br><br>
+        Eres una combinación de todo lo lindo que conozco y estoy seguro de que eres un regalo de la vida, alguien que vino a hacer cosas grandes y de la cual siento admiración, amor y respeto. Laura, te amo, gracias por dejarme cumplir este año a tu lado y espero que sigan siendo muchos más.
+    </p>
+    
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.display = "block";
+        }
+    </script>
+</body>
+</html>
